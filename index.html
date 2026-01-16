@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>OMGPORTFOLIO</title>
+</head>
+<body>
+    <section id="videoBackground">
+        <video src="./videos/backgroundpro.mp4" muted autoplay></video>
+    </section>
+
+    <h1 id="name">
+        Gracia M. Orema
+    </h1>
+
+    <div id="listContainer">
+        <ul id="categories">
+        <li><button class="expButtons" data-target="carousel1" onclick="revealDIY()">DIY/HANDYWORK</button></li>
+        <li><button class="expButtons" data-target="carousel2" onclick="revealTECH()">TECH PROJECTS</button></li>
+        <li><button class="expButtons" data-target="carousel3" onclick="revealENVIROMENTAL()">ENVIROMENTAL</button></li>
+        <li><button class="expButtons" data-target="carousel4" onclick="revealART()">ART (ROUGH DRAFTS)</button></li>
+    </ul>
+
+    <ul id="skills">
+        <li>LEADERSHIP AND TRAINING</li>
+        <li>PROJECT FULLFILLMENT</li>
+        <li>ORGANIZATION</li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+    </div>
+    
+
+    <div id="initials">
+        <h2>O.M.G</h2>
+    </div>
+
+    <div id="sidePanel"> 
+   
+
+    <div id="carousel1" class="carousel-container carousel">
+    <div class="carousel-track diy-track">
+        <div class="slide diy"><img src="./images/drum-p trap.png"></div>
+        <div class="slide diy greens"><img src="./images/duplex replacement.png"></div>
+        <div class="slide diy"><img src="./images/PUMP REPLACE.png"></div>
+    </div>
+
+    <button class="nav left">&#10094;</button>
+    <button class="nav right">&#10095;</button>
+
+    <div class="dots">
+        <span class="diyDot dot active"></span>
+        <span class="diyDot dot"></span>
+        <span class="diyDot dot"></span>
+    </div>
+    </div>
+    
+    <div id="carousel2" class="carousel-container carousel">
+        <div class="carousel-track tech-track">
+        <div class="slide tech"><h3>updating soon...</h3><img src="img1.jpg"></div>
+        <div class="slide tech"><img src="img2.jpg"></div>
+        <div class="slide tech"><img src="img3.jpg"></div>
+    </div>
+<!--       
+    <button class="nav techLeft">&#10094;</button>
+    <button class="nav techRight">&#10095;</button>
+-->
+    <div class="dots">
+        <span class="techDots dot active"></span>
+        <span class="techDots dot"></span>
+        <span class="techDots dot"></span>
+    </div>
+    </div>
+
+    <div id="carousel3" class="carousel-container carousel">
+         <div class="carousel-track enviromental-track">
+        <div class="slide enviromental"><h3>updating soon...</h3><img src="img1.jpg"></div>
+        <div class="slide enviromental"><img src="img2.jpg"></div>
+        <div class="slide enviromental"><img src="img3.jpg"></div>
+    </div>
+
+    <button class="nav enviromentalLeft">&#10094;</button>
+    <button class="nav enviromentalRight">&#10095;</button>
+    
+    <div class="dots">
+        <span class="enviromentalDots dot active"></span>
+        <span class="enviromentalDots dot"></span>
+        <span class="enviromentalDots dot"></span>
+    </div>
+    </div>
+ 
+    <div id="carousel4" class="carousel-container carousel">
+         <div class="carousel-track art-track">
+        <div class="slide art"><h3>made with illustrator</h3><img src="./images/REPAPER.png"></div>
+        <div class="slide art"><h3>made with illustrator</h3><img src="./images/NOT MILK.png"></div>
+        <div class="slide art"><h3>made with blender3d</h3><video src="./videos/boxed water.mp4" muted controls></video></div>
+    </div>
+
+    <button class="nav artLeft">&#10094;</button>
+    <button class="nav artRight">&#10095;</button>
+
+    <div class="dots">
+        <span class="artDots dot active"></span>
+        <span class="artDots dot"></span>
+        <span class="artDots dot"></span>
+    </div>
+    </div>
+  
+    <button id="hidePage" onclick="hideSidePanel()">Close</button> 
+    </div>
+
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
