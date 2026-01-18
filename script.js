@@ -171,7 +171,7 @@ function updateEnviromentalCarousel() {
     enviromentalDots.forEach(dot => dot.classList.remove("active"));
     enviromentalDots[enviromentalIndex].classList.add("active");
 }
-
+/*
 document.querySelector(".enviromentalLeft").addEventListener("click", () => {
     enviromentalIndex = (enviromentalIndex === 0) ? enviromentalSlides.length - 1 : enviromentalIndex - 1;
     updateEnviromentalCarousel();
@@ -181,7 +181,7 @@ document.querySelector(".enviromentalRight").addEventListener("click", () => {
     enviromentalIndex = (enviromentalIndex === enviromentalSlides.length - 1) ? 0 : enviromentalIndex + 1;
     updateEnviromentalCarousel();
 });
-
+*/
 enviromentalDots.forEach((dot, i) => {
     dot.addEventListener("click", () => {
         enviromentalIndex = i;
